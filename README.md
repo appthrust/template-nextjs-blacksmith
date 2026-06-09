@@ -1,10 +1,12 @@
-# AppThrust Next.js PostgreSQL template
+# AppThrust Next.js PostgreSQL Blacksmith template
 
 This starter proves the AppThrust managed PostgreSQL path:
 
 - AppThrust injects `DATABASE_URL` through `ComponentConnection`.
 - The initial schema is applied through `DatabaseChange`.
 - The Next.js app reads and writes `appthrust_demo_messages`.
+
+This variant builds container images on Blacksmith GitHub Actions runners.
 
 The app does not run migrations on startup. For local development, apply
 `db/migrations/0001_init.sql` to your PostgreSQL database, then set:
